@@ -1,0 +1,5 @@
+fire>=0.7.1
+opik>=1.9.100
+unsloth
+openai
+torch

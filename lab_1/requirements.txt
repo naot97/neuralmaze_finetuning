@@ -1,0 +1,9 @@
+fire>=0.7.1
+comet_ml
+unsloth
+transformers
+datasets
+trl
+huggingface_hub
+openai
+eventlet>=0.36.1

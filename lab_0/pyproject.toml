@@ -1,0 +1,16 @@
+[project]
+name = "lab_0"
+version = "0.1.0"
+description = "Environment Diagnostics with Unsloth"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fire>=0.7.1",
+    "opik>=1.9.100",
+    "unsloth",
+    "openai",
+    "torch"
+]
+
+[tool.uv]
+dev-dependencies = []
