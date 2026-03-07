@@ -1,0 +1,20 @@
+[project]
+name = "lab_2"
+version = "0.1.0"
+description = "Full Supervised Finetuning (SFT) using Unsloth"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fire>=0.7.1",
+    "comet_ml",
+    "unsloth",
+    "transformers",
+    "datasets",
+    "trl",
+    "huggingface_hub",
+    "openai",
+    "python-dotenv"
+]
+
+[tool.uv]
+dev-dependencies = []
