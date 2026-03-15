@@ -1,0 +1,19 @@
+[project]
+name = "lab_5"
+version = "0.1.0"
+description = "QLoRA Finetuning Experiment (KTO - Preference Optimization)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fire>=0.7.1",
+    "comet_ml",
+    "unsloth",
+    "transformers",
+    "datasets",
+    "trl",
+    "huggingface_hub",
+    "python-dotenv"
+]
+
+[tool.uv]
+dev-dependencies = []
