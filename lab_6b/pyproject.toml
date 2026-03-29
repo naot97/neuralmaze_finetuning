@@ -1,0 +1,21 @@
+[project]
+name = "lab_6b"
+version = "0.1.0"
+description = "LoRA Finetuning (Orpheus-3B TTS with SNAC codec)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fire>=0.7.1",
+    "comet_ml",
+    "unsloth",
+    "transformers",
+    "datasets",
+    "trl",
+    "huggingface_hub",
+    "python-dotenv",
+    "snac",
+    "torchaudio",
+]
+
+[tool.uv]
+dev-dependencies = []
