@@ -1,11 +1,4 @@
-fire>=0.7.1
-comet_ml
-unsloth
-transformers
-datasets
-trl
-huggingface_hub
-python-dotenv
+-r ../requirements-common.txt
 vllm
 pandas
 numpy

@@ -27,6 +27,8 @@ share/python-wheels/
 MANIFEST
 
 # PyInstaller
+#  Usually these files are written by a python script, before pyinstaller
+#  operates on them.
 *.manifest
 *.spec
 
@@ -82,10 +84,22 @@ ipython_config.py
 # pyenv
 .python-version
 
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or even
+#   fail to install them on other platforms.
 #Pipfile.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
 #poetry.lock
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
 #pdm.lock
 
+# PEP 582; used by e.g. github.com/fannheyward/coc-pyright
 __pypackages__/
 
 # Celery stuff
@@ -104,9 +118,24 @@ ENV/
 env.bak/
 venv.bak/
 
-# Project Specific
+# Project Specific — shared lab artifacts
 outputs/
 unsloth_compiled_cache/
+unsloth_training_checkpoints/
+
+# Trainer LoRA/adapter output dirs
+grpo_saved_lora/
+grpo_trainer_lora_model/
+qwen_lora/
+orpheus_lora/
+
+# HF hub_model_id local output dirs (username-prefixed dirs created by push_to_hub)
+naot97/
+theneuralmaze/
+hedrergudene/
+
+# Audio artifacts (lab_7b TTS)
+*.wav
 
 # OS Specific
 .DS_Store
