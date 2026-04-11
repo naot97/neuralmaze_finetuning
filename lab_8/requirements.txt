@@ -1,0 +1,6 @@
+fire>=0.7.1
+ollama
+requests
+pillow
+glmocr
+python-dotenv
