@@ -1,5 +1,5 @@
 [project]
-name = "lab_6a"
+name = "lab_7a"
 version = "0.1.0"
 description = "QLoRA Vision Finetuning (Qwen3-VL-8B LaTeX OCR)"
 readme = "README.md"

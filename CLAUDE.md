@@ -14,6 +14,9 @@ This is "The Neural Maze" finetuning labs — a series of self-contained labs th
 - **lab_3**: LoRA finetuning (SFT) — parameter-efficient fine-tuning with low-rank adapters
 - **lab_4**: QLoRA finetuning (SFT) — 4-bit quantized LoRA for lower memory usage
 - **lab_5**: QLoRA + KTO — preference optimization using Kahneman-Tversky Optimization
+- **lab_6**: GRPO Finetuning (Qwen3-4B Reasoning & GPT-OSS-20B Code Optimization)
+- **lab_7a**: QLoRA Vision Finetuning (Qwen3-VL-8B LaTeX OCR)
+- **lab_7b**: LoRA Finetuning (Orpheus-3B TTS with SNAC codec)
 
 ## Running Labs
 
@@ -42,7 +45,7 @@ hf jobs uv run main.py --flavor a10g-small
 
 - **Inline script dependencies**: Each `main.py` declares dependencies in PEP 723 `# /// script` blocks for `uv run` compatibility on HF Jobs
 - **Unsloth's `FastLanguageModel`**: All labs use this as the model loader — it wraps HF transformers with optimized kernels and Flash Attention 2
-- **TRL trainers**: Training uses `SFTTrainer` (labs 1-4) and `KTOTrainer` (lab 5) from the `trl` library
+- **TRL trainers**: Training uses `SFTTrainer` (labs 1-4, 7a-7b), `KTOTrainer` (lab 5), and `GRPOTrainer` (lab 6) from the `trl` library
 - **Comet ML**: Experiment tracking via `report_to=["comet_ml"]` in training args
 - **`unsloth_compiled_cache/`**: Auto-generated cache directories — not source code, do not edit
 

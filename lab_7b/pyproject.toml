@@ -1,7 +1,7 @@
 [project]
-name = "lab_5b"
+name = "lab_7b"
 version = "0.1.0"
-description = "GRPO Finetuning Experiments (Qwen3-4B Reasoning & GPT-OSS-20B Code Optimization)"
+description = "LoRA Finetuning (Orpheus-3B TTS with SNAC codec)"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -13,9 +13,8 @@ dependencies = [
     "trl",
     "huggingface_hub",
     "python-dotenv",
-    "vllm",
-    "pandas",
-    "numpy",
+    "snac",
+    "torchaudio",
 ]
 
 [tool.uv]
